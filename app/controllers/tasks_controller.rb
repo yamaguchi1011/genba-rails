@@ -34,12 +34,11 @@ class TasksController < ApplicationController
     @task = current_user.tasks.new(task_params)
 
     if @task.save
-      redirect_to @task, notice: "タスク「#{@task.name}」を登録しました"
+      redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
     else
-      rander :new
+      render :new
     end
   end
-
   
 
   private

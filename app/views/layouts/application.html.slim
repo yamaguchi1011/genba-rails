@@ -20,6 +20,6 @@ html
         - else 
           li.nav-item= link_to 'ログイン', login_path, class: 'nav-link'
     .container 
-      -if flash.notice.present?
-        .aleart.aleart-success= flash.notice
+      - if flash.notice.present?
+        .aleart.aleart-success = flash.notice
       = yield
