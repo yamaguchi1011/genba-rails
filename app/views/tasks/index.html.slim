@@ -15,12 +15,12 @@ h1 タスク一覧
 
 .mb-3
 table.table.table-hover
-  thead.thead-default 
+  thead.thead-default
     tr
-      th= Task.human_attribute_name(:name)
+      th= sort_link(@q, :name)
       th= Task.human_attribute_name(:created_at)
-      th=
-  tbody 
+      th
+  tbody
     -@tasks.each do |task|
       tr
         td= link_to task.name, task
