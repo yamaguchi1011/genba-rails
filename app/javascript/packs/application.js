@@ -8,6 +8,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require('packs/tasks')
 // ここから不要な部分コメントアウトした
 // require('jquery')
 // ここまで不要な部分コメントアウトした
